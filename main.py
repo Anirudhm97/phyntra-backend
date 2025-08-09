@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app, 
      origins=[
          'https://phyntra.ai',
-         'https://www.phyntra.ai',  # This is the one being blocked!
+         'phyntra-frontend-poihqi5x2-phyntra.vercel.app',  # This is the one being blocked!
          'http://localhost:3000'
      ],
      allow_headers=['Content-Type', 'Authorization'],
@@ -38,3 +38,4 @@ def process_invoice():
     
     # Your processing logic here
     return jsonify({"status": "success", "message": "Processing started"})
+
